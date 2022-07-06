@@ -130,21 +130,19 @@ public class JF_ThongKe extends javax.swing.JFrame {
 
         jPanel1.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
 
-        jPanel2.setBackground(java.awt.SystemColor.textHighlight);
+        jPanel2.setBackground(new java.awt.Color(255, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(400, 50));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Thống Kê Danh Sách Sinh Viên");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(426, 426, 426)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -154,15 +152,15 @@ public class JF_ThongKe extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 3, 20)); // NOI18N
-        jLabel2.setText("Lựa Chọn Lọc Thống Kê");
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel2.setText("Thống kê theo");
 
         rdLopQuanLy.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         buttonGroup1.add(rdLopQuanLy);
-        rdLopQuanLy.setFont(new java.awt.Font("Tahoma", 2, 15)); // NOI18N
+        rdLopQuanLy.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         rdLopQuanLy.setForeground(new java.awt.Color(255, 51, 51));
         rdLopQuanLy.setSelected(true);
-        rdLopQuanLy.setText("Sinh Viên Thuộc Lớp Quản Lý");
+        rdLopQuanLy.setText("Lớp");
         rdLopQuanLy.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         rdLopQuanLy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,9 +170,9 @@ public class JF_ThongKe extends javax.swing.JFrame {
 
         rdLopHocPhan.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         buttonGroup1.add(rdLopHocPhan);
-        rdLopHocPhan.setFont(new java.awt.Font("Tahoma", 2, 15)); // NOI18N
+        rdLopHocPhan.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         rdLopHocPhan.setForeground(new java.awt.Color(255, 51, 51));
-        rdLopHocPhan.setText("Sinh Viên Thuộc Lớp Học Phần");
+        rdLopHocPhan.setText("Lớp học");
         rdLopHocPhan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         rdLopHocPhan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,9 +182,9 @@ public class JF_ThongKe extends javax.swing.JFrame {
 
         rdHocBong.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         buttonGroup1.add(rdHocBong);
-        rdHocBong.setFont(new java.awt.Font("Tahoma", 2, 15)); // NOI18N
+        rdHocBong.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         rdHocBong.setForeground(new java.awt.Color(255, 51, 51));
-        rdHocBong.setText("Sinh Viên Nhận Học Bổng");
+        rdHocBong.setText("Học bổng");
         rdHocBong.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         rdHocBong.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -196,9 +194,9 @@ public class JF_ThongKe extends javax.swing.JFrame {
 
         rdCanhCao.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         buttonGroup1.add(rdCanhCao);
-        rdCanhCao.setFont(new java.awt.Font("Tahoma", 2, 15)); // NOI18N
+        rdCanhCao.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         rdCanhCao.setForeground(new java.awt.Color(255, 51, 51));
-        rdCanhCao.setText("Sinh Viên Bị Cảnh Cáo");
+        rdCanhCao.setText("Cảnh cáo");
         rdCanhCao.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         rdCanhCao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -251,7 +249,7 @@ public class JF_ThongKe extends javax.swing.JFrame {
         });
 
         btnShowData.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/myShow.png"))); // NOI18N
-        btnShowData.setText("Show Data");
+        btnShowData.setText("Hiển thị");
         btnShowData.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnShowData.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

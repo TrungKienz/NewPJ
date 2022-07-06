@@ -223,29 +223,29 @@ public class JP_SinhVien extends javax.swing.JPanel {
         btnDeleteSinhVien = new javax.swing.JButton();
         btnResetSinhVien = new javax.swing.JButton();
 
+        setPreferredSize(new java.awt.Dimension(1252, 618));
+
         jPanel1.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
 
-        jPanel2.setBackground(java.awt.SystemColor.textHighlight);
+        jPanel2.setBackground(new java.awt.Color(255, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(400, 50));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Quản Lý Danh Sách Sinh Viên");
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("QUẢN LÝ SINH VIÊN");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(394, 394, 394)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -284,64 +284,64 @@ public class JP_SinhVien extends javax.swing.JPanel {
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 51)));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel2.setText("Mã Sinh Viên");
+        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel2.setText("Mã số sinh viên");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel3.setText("Họ Tên Sinh Viên");
+        jLabel3.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel3.setText("Họ tên sinh viên");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel4.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel4.setText("Mật Khẩu");
+        jLabel4.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel4.setText("Mật khẩu");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel5.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel5.setForeground(new java.awt.Color(255, 0, 0));
         jLabel5.setText("Ngày Sinh");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel6.setText("Thời Gian Học");
+        jLabel6.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel6.setText("Năm đào tạo");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel7.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel7.setText("Nơi Sinh");
+        jLabel7.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel7.setText("Quê quán");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel8.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel8.setText("Mã Lớp");
+        jLabel8.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel8.setText("Mã lớp học");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel9.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel9.setText("Mã Hệ Đào Tạo");
+        jLabel9.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel9.setText("Hệ đào tạo");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel10.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel10.setText("Họ Tên Ba");
+        jLabel10.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel10.setText("Họ tên bố");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel11.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel11.setText("Giới Tính");
+        jLabel11.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel11.setText("Giới tính");
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel12.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel12.setText("Số Điện Thoại");
+        jLabel12.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel12.setText("SDT cá nhân");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel13.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel13.setText("Ngày Nhập Học");
+        jLabel13.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel13.setText("Ngày nhập học");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel14.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel14.setText("Số Điện Thoại Gia Đình");
+        jLabel14.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel14.setText("SDT bố mẹ");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel15.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel15.setText("Họ Tên Mẹ");
+        jLabel15.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel15.setText("Họ tên mẹ");
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel16.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel16.setText("Email");
+        jLabel16.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel16.setText("OutLook");
 
         txtMaSinhVien.setEnabled(false);
         txtMaSinhVien.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -452,7 +452,7 @@ public class JP_SinhVien extends javax.swing.JPanel {
                                         .addComponent(rdNu))
                                     .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel14)
@@ -574,7 +574,7 @@ public class JP_SinhVien extends javax.swing.JPanel {
         btnAddSinhVien.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnAddSinhVien.setForeground(new java.awt.Color(255, 51, 51));
         btnAddSinhVien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/new.png"))); // NOI18N
-        btnAddSinhVien.setText("Add     ");
+        btnAddSinhVien.setText("Thêm");
         btnAddSinhVien.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAddSinhVien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -585,7 +585,7 @@ public class JP_SinhVien extends javax.swing.JPanel {
         btnUpdateSinhVien.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnUpdateSinhVien.setForeground(new java.awt.Color(255, 51, 51));
         btnUpdateSinhVien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/save.png"))); // NOI18N
-        btnUpdateSinhVien.setText("Update");
+        btnUpdateSinhVien.setText("Cập nhật");
         btnUpdateSinhVien.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnUpdateSinhVien.setEnabled(false);
         btnUpdateSinhVien.addActionListener(new java.awt.event.ActionListener() {
@@ -597,7 +597,7 @@ public class JP_SinhVien extends javax.swing.JPanel {
         btnDeleteSinhVien.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnDeleteSinhVien.setForeground(new java.awt.Color(255, 51, 51));
         btnDeleteSinhVien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/delete.png"))); // NOI18N
-        btnDeleteSinhVien.setText("Delete ");
+        btnDeleteSinhVien.setText("Xóa");
         btnDeleteSinhVien.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDeleteSinhVien.setEnabled(false);
         btnDeleteSinhVien.addActionListener(new java.awt.event.ActionListener() {
@@ -609,7 +609,7 @@ public class JP_SinhVien extends javax.swing.JPanel {
         btnResetSinhVien.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnResetSinhVien.setForeground(new java.awt.Color(255, 51, 51));
         btnResetSinhVien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/reset.png"))); // NOI18N
-        btnResetSinhVien.setText("Reset ");
+        btnResetSinhVien.setText("Làm mới");
         btnResetSinhVien.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnResetSinhVien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -622,12 +622,12 @@ public class JP_SinhVien extends javax.swing.JPanel {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAddSinhVien, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUpdateSinhVien, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDeleteSinhVien, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnResetSinhVien, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(btnUpdateSinhVien, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnDeleteSinhVien, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnAddSinhVien, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnResetSinhVien, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(19, 19, 19))
         );
         jPanel6Layout.setVerticalGroup(
@@ -641,14 +641,14 @@ public class JP_SinhVien extends javax.swing.JPanel {
                 .addComponent(btnDeleteSinhVien)
                 .addGap(18, 18, 18)
                 .addComponent(btnResetSinhVien)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1104, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1252, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -665,11 +665,11 @@ public class JP_SinhVien extends javax.swing.JPanel {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGap(74, 74, 74)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(44, Short.MAX_VALUE))
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -680,7 +680,9 @@ public class JP_SinhVien extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

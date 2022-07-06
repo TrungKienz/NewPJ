@@ -60,7 +60,6 @@ public class JF_AddDiem extends javax.swing.JFrame {
         txtDiemB = new javax.swing.JTextField();
         txtDiemThiL1 = new javax.swing.JTextField();
         txtDiemThiL2 = new javax.swing.JTextField();
-        cbTL2 = new javax.swing.JCheckBox();
         btnCheck = new javax.swing.JButton();
         btnThem = new javax.swing.JButton();
         btnThoat = new javax.swing.JButton();
@@ -70,27 +69,25 @@ public class JF_AddDiem extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(java.awt.SystemColor.textHighlight);
+        jPanel1.setBackground(new java.awt.Color(255, 0, 51));
         jPanel1.setPreferredSize(new java.awt.Dimension(400, 50));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Thêm Điểm Sinh Viên");
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("NHẬP ĐIỂM");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(233, 233, 233)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -98,28 +95,28 @@ public class JF_AddDiem extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 51)));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel2.setText("Mã Sinh Viên");
+        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel2.setText("MSSV");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel3.setText("Mã Học Phần");
+        jLabel3.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel3.setText("Mã học phần");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel4.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel4.setText("Điểm C");
+        jLabel4.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel4.setText("Trọng số");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel5.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel5.setText("Điểm B");
+        jLabel5.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel5.setText("Điểm chuyên cần");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel6.setText("Điểm Thi Lần 1");
+        jLabel6.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel6.setText("Điểm thi giữa kỳ");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel7.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel7.setText("Điểm Thi Lần 2");
+        jLabel7.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel7.setText("Điểm thi cuối kỳ");
 
         txtDiemC.setEnabled(false);
 
@@ -128,16 +125,6 @@ public class JF_AddDiem extends javax.swing.JFrame {
         txtDiemThiL1.setEnabled(false);
 
         txtDiemThiL2.setEnabled(false);
-
-        cbTL2.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
-        cbTL2.setText("Thi Lần 2");
-        cbTL2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        cbTL2.setEnabled(false);
-        cbTL2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbTL2ActionPerformed(evt);
-            }
-        });
 
         btnCheck.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnCheck.setForeground(javax.swing.UIManager.getDefaults().getColor("nb.errorForeground"));
@@ -182,28 +169,26 @@ public class JF_AddDiem extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel6)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGap(33, 33, 33)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel7)
+                                .addComponent(jLabel2)
+                                .addComponent(jLabel3)))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                            .addGap(30, 30, 30)
+                            .addComponent(jLabel6)))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtMaHocPhan, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDiemC, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDiemThiL1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDiemThiL2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDiemB, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(cbTL2))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(txtMaHocPhan, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtDiemC, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtDiemThiL1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtDiemThiL2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtDiemB, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(txtMaSinhVien, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20)
@@ -241,8 +226,8 @@ public class JF_AddDiem extends javax.swing.JFrame {
                             .addComponent(txtDiemC, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(txtDiemB, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtDiemB, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtDiemThiL1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -252,8 +237,7 @@ public class JF_AddDiem extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel7)
-                        .addComponent(txtDiemThiL2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(cbTL2))
+                        .addComponent(txtDiemThiL2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btnThem, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnThoat, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -264,7 +248,7 @@ public class JF_AddDiem extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 735, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 743, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -320,8 +304,8 @@ public class JF_AddDiem extends javax.swing.JFrame {
         txtDiemB.setEnabled(flag);
         txtDiemC.setEnabled(flag);
         txtDiemThiL1.setEnabled(flag);
-        cbTL2.setEnabled(flag);
-        txtDiemThiL2.setEnabled(cbTL2.isSelected());
+
+
     }//GEN-LAST:event_btnCheckActionPerformed
 
     private void btnThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemActionPerformed
@@ -337,18 +321,6 @@ public class JF_AddDiem extends javax.swing.JFrame {
             Float diemTL1 = Float.parseFloat(txtDiemThiL1.getText());
             Float diemTL2 = null;
             DBO_DIEM obj = new DBO_DIEM();
-            if (cbTL2.isSelected()) {
-                if (txtDiemThiL2.getText().isEmpty()) {
-                    method.showMessegaWa("Điểm thi lần 2 không được rỗng");
-                    check = false;
-                } else {
-                    diemTL2 = Float.parseFloat(txtDiemThiL2.getText());
-                    obj.setDiemTL2(diemTL2);
-                    check = true;
-                }
-            } else {
-                check = true;
-            }
             if (check) {
                 obj.setMaSinhVien(mssv);
                 obj.setMaHocPhan(mahp);
@@ -372,10 +344,6 @@ public class JF_AddDiem extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnThemActionPerformed
 
-    private void cbTL2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbTL2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbTL2ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -384,7 +352,6 @@ public class JF_AddDiem extends javax.swing.JFrame {
     private javax.swing.JButton btnCheck;
     private javax.swing.JButton btnThem;
     private javax.swing.JButton btnThoat;
-    private javax.swing.JCheckBox cbTL2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

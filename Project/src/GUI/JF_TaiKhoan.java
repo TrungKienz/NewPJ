@@ -58,7 +58,7 @@ public class JF_TaiKhoan extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        jLabel1.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel1.setForeground(new java.awt.Color(255, 0, 51));
         jLabel1.setText("Thông Tin Tài Khoản Của Bạn");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
