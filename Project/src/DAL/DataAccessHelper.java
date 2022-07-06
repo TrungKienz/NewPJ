@@ -11,11 +11,11 @@ public class DataAccessHelper {
 
     protected Connection cnn;
     //netstat -a -P TCP
-    String Hostname = "LAPTOP-A0RR97TI\\SQLSV";
+    String Hostname = "LAPTOP-A0RR97TI";
     String port = "1433";
     String DBName = "QuanLySinhVien_Offcial";
     String User = "sa";
-    String Password = "123456";
+    String Password = "1234";
     String Driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     String URL = "jdbc:sqlserver://" + Hostname + ":" + port + ";database=" + DBName;
 
